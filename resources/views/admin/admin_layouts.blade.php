@@ -17,6 +17,8 @@
 
     <!-- ########## START: MAIN PANEL ########## -->
     @yield('admin_content')
+
+    
      @include('admin.partial.footer');
 
   </body>
