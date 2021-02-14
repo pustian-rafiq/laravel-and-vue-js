@@ -36,4 +36,8 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    // ekta user er onek post thakte pare ejonno hasMany() use kora hoice
+     public function posts(){
+        return $this->hasMany(Post::class);
+      }
 }
