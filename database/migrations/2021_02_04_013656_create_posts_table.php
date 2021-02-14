@@ -17,10 +17,10 @@ class CreatePostsTable extends Migration
             $table->bigIncrements('id');
             $table->integer('category_id');
             $table->integer('user_id');
-            $table->integer('coment_id');
-            $table->integer('post_title');
-            $table->integer('post_details');
-            $table->integer('post_image');
+            $table->integer('comment_id');
+            $table->string('post_title');
+            $table->text('post_details');
+            $table->string('post_image');
             $table->timestamps();
         });
     }
