@@ -14,6 +14,8 @@ class CategoryController extends Controller
         //return $request->all();
         $category = new Category();
         $category->category_name = $request->category_name;
+       
+        
         $category->save();
 
     }
