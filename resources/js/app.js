@@ -16,6 +16,11 @@ import Vue from 'vue/dist/vue.common.js';
  Vue.component('admin-main', require('./components/admin/AdminMaster.vue').default);
 //Vue.component('admin-home', require('./components/admin/AdminHome.vue').default);
 
+//Import v-form
+import { Form, HasError, AlertError } from 'vform'
+window.Form = Form
+Vue.component(HasError.name, HasError)
+Vue.component(AlertError.name, AlertError)
 
 
 import {routes} from './routes'

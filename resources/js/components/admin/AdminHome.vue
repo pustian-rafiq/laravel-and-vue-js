@@ -28,3 +28,9 @@
 
     </section>
 </template>
+<script> 
+export default {
+    name: "AdminHome"
+}
+ 
+</script>
